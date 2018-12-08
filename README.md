@@ -15,7 +15,7 @@
     - 	Clear list
     - 	Exit
 	
-2.	Doubly linked list - doubly_linked_list.py
+2.	**Doubly linked list - doubly_linked_list.py**
 	- 	Insert node to list
 		- Insert node at the beginning of the list
         - Insert node at the end of the list
@@ -30,7 +30,7 @@
     - 	Clear list
     - 	Exit
 	
-3.	Circular linked list - circular_linked_list.py
+3.	**Circular linked list - circular_linked_list.py**
 	- 	Insert node to list
     - 	Delete node from list
 		- Delete node from the list
@@ -40,13 +40,13 @@
     - 	Clear list
     - 	Exit
 	
-4.	Stack - stack.py
+4.	**Stack - stack.py**
 	- 	Push
     - 	Pop
     - 	Display
     - 	Exit
 	
-5.	Queue - queue.py
+5.	**Queue - queue.py**
 	- 	Enqueue
     - 	Dequeue
     - 	Display
@@ -55,8 +55,8 @@
 
 ## **Sorting Algorithms**
 
-**1. Bubble Sort - bubble_sort.py**
-	 - Sample Output
+1. 	**Bubble Sort - bubble_sort.py**
+	- Sample Output
 ```
 Input Array:: 
 [10, 20, 30, 15, 25, 5, 17, 2]
@@ -128,8 +128,8 @@ Sorted Array::
 [2, 5, 10, 15, 17, 20, 25, 30]
 ```
 
-**2. Insertion Sort - insertion_sort.py**
-	 - Sample Output
+2. 	**Insertion Sort - insertion_sort.py**
+	- Sample Output
 ```
 Input Array:: 
 [10, 20, 30, 15, 25, 5, 17, 2]
@@ -171,8 +171,8 @@ Sorted Array::
 [2, 5, 10, 15, 17, 20, 25, 30]
 ```
 
-**3. Selection Sort - selection_sort.py**
-	 - Sample Output
+3. 	**Selection Sort - selection_sort.py**
+	- Sample Output
 ```
 Input Array:: 
 [10, 20, 30, 15, 25, 5, 17, 2]
@@ -190,8 +190,8 @@ Sorted Array::
 [2, 5, 10, 15, 17, 20, 25, 30]
 ```
 
-**4. Quick Sort - quick_sort.py**
-	 - Sample Output
+4. 	**Quick Sort - quick_sort.py**
+	- Sample Output
 ```
 Input Array:: 
 [10, 20, 30, 15, 25, 5, 7, 2]
@@ -219,8 +219,8 @@ Sorted Array::
 [2, 5, 7, 10, 15, 20, 25, 30]
 ```
 
-**5. Merge Sort - merge_sort.py**
-	 - Sample Output
+5. 	**Merge Sort - merge_sort.py**
+	- Sample Output
 ```
 Input Array:: 
 [10, 20, 30, 15, 25, 5, 17, 2]
@@ -258,8 +258,8 @@ Sorted Array::
 [2, 5, 10, 15, 17, 20, 25, 30]
 ```
 
-**5. Heap Sort - heap_sort.py**
-	 - Sample Output
+6. 	**Heap Sort - heap_sort.py**
+	- Sample Output
 ```
 Input Array:: 
 [10, 20, 30, 15, 25, 5, 17, 2]
