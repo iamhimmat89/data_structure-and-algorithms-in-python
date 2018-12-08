@@ -1,6 +1,6 @@
 # Python Algorithms & Data Structure
 
-**1.Singly linked list - linked_list.py**
+1.	Singly linked list - linked_list.py
 	- 	Insert node to list
 		- Insert node at the beginning of the list
         - Insert node at the end of the list
