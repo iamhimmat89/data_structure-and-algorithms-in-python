@@ -1,6 +1,6 @@
 # Python Algorithms & Data Structure
 
-1.	Singly linked list - linked_list.py
+1.	**Singly linked list - linked_list.py**
 	- 	Insert node to list
 		- Insert node at the beginning of the list
         - Insert node at the end of the list
@@ -15,7 +15,7 @@
     - 	Clear list
     - 	Exit
 	
-**2.Doubly linked list - doubly_linked_list.py**
+2.	Doubly linked list - doubly_linked_list.py
 	- 	Insert node to list
 		- Insert node at the beginning of the list
         - Insert node at the end of the list
@@ -30,7 +30,7 @@
     - 	Clear list
     - 	Exit
 	
-**3.Circular linked list - circular_linked_list.py**
+3.	Circular linked list - circular_linked_list.py
 	- 	Insert node to list
     - 	Delete node from list
 		- Delete node from the list
@@ -40,13 +40,13 @@
     - 	Clear list
     - 	Exit
 	
-**4.Stack - stack.py**
+4.	Stack - stack.py
 	- 	Push
     - 	Pop
     - 	Display
     - 	Exit
 	
-**5.Queue - queue.py**
+5.	Queue - queue.py
 	- 	Enqueue
     - 	Dequeue
     - 	Display
