@@ -15,13 +15,9 @@ class QuickSort:
         for j in range(p, r):
             if self.array[j] <= self.array[r]:
                 i = i + 1
-                print("    swap_inside " + str(self.array[i]) + " and " + str(self.array[j]))
                 self.array[i], self.array[j] = self.array[j], self.array[i]
-                print("    array: "+str(self.array))
 
-        print("    swap_outside " + str(self.array[i + 1]) + " and " + str(self.array[r]))
         self.array[i + 1], self.array[r] = self.array[r], self.array[i + 1]
-        print("    array: "+str(self.array))
         return i + 1
 
     def sort(self, p, r, array=None):

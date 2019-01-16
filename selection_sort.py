@@ -18,7 +18,6 @@ class SelectionSort:
                     min_idx = j
 
             self.array[i], self.array[min_idx] = self.array[min_idx], self.array[i]
-            print("iteration output: " + str(self.array))
 
     # method to display sorted array
     def display(self):

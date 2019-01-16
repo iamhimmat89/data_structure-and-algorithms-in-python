@@ -14,10 +14,6 @@ class HeapSort:
         l = 2 * i + 1
         r = 2 * i + 2
 
-        print("largest : " + str(largest))
-        print("l : " + str(l))
-        print("r : " + str(r))
-
         if l < n and self.array[i] < self.array[l]:
             largest = l
 
@@ -26,7 +22,6 @@ class HeapSort:
 
         if largest != i:
             self.array[i], self.array[largest] = self.array[largest], self.array[i]
-            print("iteration output : " + str(self.array))
             self.heapify(n, largest)
 
     # method to sort given list into ascending order
@@ -40,7 +35,6 @@ class HeapSort:
         for i in range(n - 1, 0, -1):
             self.array[i], self.array[0] = self.array[0], self.array[i]
             self.heapify(i, 0)
-            print("iteration output : " + str(self.array))
 
     # method to display sorted array
     def display(self):

@@ -15,10 +15,6 @@ class MergeSort:
             L = array[:mid]
             R = array[mid:]
 
-            print("mid: " + str(mid))
-            print("L: " + str(L))
-            print("R: " + str(R))
-
             self.sort(L)
             self.sort(R)
 
@@ -42,8 +38,6 @@ class MergeSort:
                 array[k] = R[j]
                 j = j + 1
                 k = k + 1
-
-            print("    iteration output: " + str(array))
 
         self.array = array
 

@@ -16,15 +16,12 @@ class InsertionSort:
 
         for i in range(1, self.length):
             key = self.array[i]
-            print("i loop - " + str(i))
 
             j = i - 1
             while j >= 0 and key < self.array[j]:
-                print("    j loop - " + str(j))
                 self.array[j + 1] = self.array[j]
                 j -= 1
             self.array[j + 1] = key
-            print("    iteration output: " + str(self.array))
 
     # method to display sorted array
     def display(self):
