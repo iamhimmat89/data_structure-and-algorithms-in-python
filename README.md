@@ -5,10 +5,10 @@
 ### Searching and Sorting
 
 1. 	**Linear Search**
-	Time Complexity - O(n)
+	-	Time Complexity - O(n)
 
 2. 	**Binary Search**
-	Time Complexity - O(Log n)
+	-	Time Complexity - O(Log n)
 	
 	
 	
