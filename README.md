@@ -1,5 +1,21 @@
 # Python Algorithms & Data Structure
 
+## Algorithms
+
+### Searching and Sorting
+
+1. 	**Linear Search**
+	Time Complexity - O(n)
+
+2. 	**Binary Search**
+	Time Complexity - O(Log n)
+	
+	
+	
+## Data Structure
+
+### Linked List
+
 1.	**Singly linked list - linked_list.py**
 	- 	Insert node to list
 		- Insert node at the beginning of the list
@@ -40,13 +56,19 @@
     - 	Clear list
     - 	Exit
 	
-4.	**Stack - stack.py**
+
+### Stack
+	
+1.	**Stack - stack.py**
 	- 	Push
     - 	Pop
     - 	Display
     - 	Exit
 	
-5.	**Queue - queue.py**
+	
+### Queue
+	
+1.	**Queue - queue.py**
 	- 	Enqueue
     - 	Dequeue
     - 	Display
