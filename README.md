@@ -9,8 +9,174 @@
 
 2. 	**Binary Search**
 	-	Time Complexity - O(Log n)
+
+3. 	**Bubble Sort**
+	- 	Time Complexity - O(n^2)
 	
+	```
+	Input Array:: 
+	[10, 20, 30, 15, 25, 5, 17, 2]
 	
+	i loop - 0
+		j loop - 0
+		j loop - 1
+		j loop - 2
+		Swap :: 30 and 15
+		j loop - 3
+		Swap :: 30 and 25
+		j loop - 4
+		Swap :: 30 and 5
+		j loop - 5
+		Swap :: 30 and 17
+		j loop - 6
+		Swap :: 30 and 2
+		iteration output: [10, 20, 15, 25, 5, 17, 2, 30]
+	i loop - 1
+		j loop - 0
+		j loop - 1
+		Swap :: 20 and 15
+		j loop - 2
+		j loop - 3
+		Swap :: 25 and 5
+		j loop - 4
+		Swap :: 25 and 17
+		j loop - 5
+		Swap :: 25 and 2
+		iteration output: [10, 15, 20, 5, 17, 2, 25, 30]
+	i loop - 2
+		j loop - 0
+		j loop - 1
+		j loop - 2
+		Swap :: 20 and 5
+		j loop - 3
+		Swap :: 20 and 17
+		j loop - 4
+		Swap :: 20 and 2
+		iteration output: [10, 15, 5, 17, 2, 20, 25, 30]
+	i loop - 3
+		j loop - 0
+		j loop - 1
+		Swap :: 15 and 5
+		j loop - 2
+		j loop - 3
+		Swap :: 17 and 2
+		iteration output: [10, 5, 15, 2, 17, 20, 25, 30]
+	i loop - 4
+		j loop - 0
+		Swap :: 10 and 5
+		j loop - 1
+		j loop - 2
+		Swap :: 15 and 2
+		iteration output: [5, 10, 2, 15, 17, 20, 25, 30]
+	i loop - 5
+		j loop - 0
+		j loop - 1
+		Swap :: 10 and 2
+		iteration output: [5, 2, 10, 15, 17, 20, 25, 30]
+	i loop - 6
+		j loop - 0
+		Swap :: 5 and 2
+		iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	i loop - 7
+		iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	
+	Sorted Array:: 
+	[2, 5, 10, 15, 17, 20, 25, 30]
+	```
+
+4. 	**Selection Sort**
+	-	Time Complexity - O(n^2)
+	
+	```
+	Input Array:: 
+	[10, 20, 30, 15, 25, 5, 17, 2]
+	
+	iteration output: [2, 20, 30, 15, 25, 5, 17, 10]
+	iteration output: [2, 5, 30, 15, 25, 20, 17, 10]
+	iteration output: [2, 5, 10, 15, 25, 20, 17, 30]
+	iteration output: [2, 5, 10, 15, 25, 20, 17, 30]
+	iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	
+	Sorted Array:: 
+	[2, 5, 10, 15, 17, 20, 25, 30]
+	```
+
+5. 	**Insertion Sort**
+	-	Time Complexity - O(n^2)
+	
+	```
+	Input Array:: 
+	[10, 20, 30, 15, 25, 5, 17, 2]
+	
+	i loop - 1
+		iteration output: [10, 20, 30, 15, 25, 5, 17, 2]
+	i loop - 2
+		iteration output: [10, 20, 30, 15, 25, 5, 17, 2]
+	i loop - 3
+		j loop - 2
+		j loop - 1
+		iteration output: [10, 15, 20, 30, 25, 5, 17, 2]
+	i loop - 4
+		j loop - 3
+		iteration output: [10, 15, 20, 25, 30, 5, 17, 2]
+	i loop - 5
+		j loop - 4
+		j loop - 3
+		j loop - 2
+		j loop - 1
+		j loop - 0
+		iteration output: [5, 10, 15, 20, 25, 30, 17, 2]
+	i loop - 6
+		j loop - 5
+		j loop - 4
+		j loop - 3
+		iteration output: [5, 10, 15, 17, 20, 25, 30, 2]
+	i loop - 7
+		j loop - 6
+		j loop - 5
+		j loop - 4
+		j loop - 3
+		j loop - 2
+		j loop - 1
+		j loop - 0
+		iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	
+	Sorted Array:: 
+	[2, 5, 10, 15, 17, 20, 25, 30]
+	```
+
+6. 	**Quick Sort - quick_sort.py**
+	-	Time Complexity - O(n^2)
+	
+	```
+	Input Array:: 
+	[10, 20, 30, 15, 25, 5, 7, 2]
+	
+		swap_outside 10 and 2
+		array: [2, 20, 30, 15, 25, 5, 7, 10]
+		swap_inside 20 and 5
+		array: [2, 5, 30, 15, 25, 20, 7, 10]
+		swap_inside 30 and 7
+		array: [2, 5, 7, 15, 25, 20, 30, 10]
+		swap_outside 15 and 10
+		array: [2, 5, 7, 10, 25, 20, 30, 15]
+		swap_inside 5 and 5
+		array: [2, 5, 7, 10, 25, 20, 30, 15]
+		swap_outside 7 and 7
+		array: [2, 5, 7, 10, 25, 20, 30, 15]
+		swap_outside 25 and 15
+		array: [2, 5, 7, 10, 15, 20, 30, 25]
+		swap_inside 20 and 20
+		array: [2, 5, 7, 10, 15, 20, 30, 25]
+		swap_outside 30 and 25
+		array: [2, 5, 7, 10, 15, 20, 25, 30]
+	
+	Sorted Array:: 
+	[2, 5, 7, 10, 15, 20, 25, 30]
+	```	
 	
 ## Data Structure
 
@@ -77,140 +243,11 @@
 
 ## **Sorting Algorithms**
 
-1. 	**Bubble Sort - bubble_sort.py**
-	- Sample Output
-```
-Input Array:: 
-[10, 20, 30, 15, 25, 5, 17, 2]
- 
-i loop - 0
-    j loop - 0
-    j loop - 1
-    j loop - 2
-    Swap :: 30 and 15
-    j loop - 3
-    Swap :: 30 and 25
-    j loop - 4
-    Swap :: 30 and 5
-    j loop - 5
-    Swap :: 30 and 17
-    j loop - 6
-    Swap :: 30 and 2
-    iteration output: [10, 20, 15, 25, 5, 17, 2, 30]
-i loop - 1
-    j loop - 0
-    j loop - 1
-    Swap :: 20 and 15
-    j loop - 2
-    j loop - 3
-    Swap :: 25 and 5
-    j loop - 4
-    Swap :: 25 and 17
-    j loop - 5
-    Swap :: 25 and 2
-    iteration output: [10, 15, 20, 5, 17, 2, 25, 30]
-i loop - 2
-    j loop - 0
-    j loop - 1
-    j loop - 2
-    Swap :: 20 and 5
-    j loop - 3
-    Swap :: 20 and 17
-    j loop - 4
-    Swap :: 20 and 2
-    iteration output: [10, 15, 5, 17, 2, 20, 25, 30]
-i loop - 3
-    j loop - 0
-    j loop - 1
-    Swap :: 15 and 5
-    j loop - 2
-    j loop - 3
-    Swap :: 17 and 2
-    iteration output: [10, 5, 15, 2, 17, 20, 25, 30]
-i loop - 4
-    j loop - 0
-    Swap :: 10 and 5
-    j loop - 1
-    j loop - 2
-    Swap :: 15 and 2
-    iteration output: [5, 10, 2, 15, 17, 20, 25, 30]
-i loop - 5
-    j loop - 0
-    j loop - 1
-    Swap :: 10 and 2
-    iteration output: [5, 2, 10, 15, 17, 20, 25, 30]
-i loop - 6
-    j loop - 0
-    Swap :: 5 and 2
-    iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
-i loop - 7
-    iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
- 
-Sorted Array:: 
-[2, 5, 10, 15, 17, 20, 25, 30]
-```
 
-2. 	**Insertion Sort - insertion_sort.py**
-	- Sample Output
-```
-Input Array:: 
-[10, 20, 30, 15, 25, 5, 17, 2]
- 
-i loop - 1
-    iteration output: [10, 20, 30, 15, 25, 5, 17, 2]
-i loop - 2
-    iteration output: [10, 20, 30, 15, 25, 5, 17, 2]
-i loop - 3
-    j loop - 2
-    j loop - 1
-    iteration output: [10, 15, 20, 30, 25, 5, 17, 2]
-i loop - 4
-    j loop - 3
-    iteration output: [10, 15, 20, 25, 30, 5, 17, 2]
-i loop - 5
-    j loop - 4
-    j loop - 3
-    j loop - 2
-    j loop - 1
-    j loop - 0
-    iteration output: [5, 10, 15, 20, 25, 30, 17, 2]
-i loop - 6
-    j loop - 5
-    j loop - 4
-    j loop - 3
-    iteration output: [5, 10, 15, 17, 20, 25, 30, 2]
-i loop - 7
-    j loop - 6
-    j loop - 5
-    j loop - 4
-    j loop - 3
-    j loop - 2
-    j loop - 1
-    j loop - 0
-    iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
- 
-Sorted Array:: 
-[2, 5, 10, 15, 17, 20, 25, 30]
-```
 
-3. 	**Selection Sort - selection_sort.py**
-	- Sample Output
-```
-Input Array:: 
-[10, 20, 30, 15, 25, 5, 17, 2]
- 
-iteration output: [2, 20, 30, 15, 25, 5, 17, 10]
-iteration output: [2, 5, 30, 15, 25, 20, 17, 10]
-iteration output: [2, 5, 10, 15, 25, 20, 17, 30]
-iteration output: [2, 5, 10, 15, 25, 20, 17, 30]
-iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
-iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
-iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
-iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
- 
-Sorted Array:: 
-[2, 5, 10, 15, 17, 20, 25, 30]
-```
+
+
+
 
 4. 	**Quick Sort - quick_sort.py**
 	- Sample Output
