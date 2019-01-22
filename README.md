@@ -148,7 +148,7 @@
 	[2, 5, 10, 15, 17, 20, 25, 30]
 	```
 
-6. 	**Quick Sort - quick_sort.py**
+6. 	**Quick Sort**
 	-	Time Complexity - O(n^2)
 	
 	```
@@ -177,6 +177,158 @@
 	Sorted Array:: 
 	[2, 5, 7, 10, 15, 20, 25, 30]
 	```	
+
+7. 	**Merge Sort**
+	-	Time Complexity - O(n Log n)
+	
+	```
+	Input Array:: 
+	[10, 20, 30, 15, 25, 5, 17, 2]
+	
+	mid: 4
+	L: [10, 20, 30, 15]
+	R: [25, 5, 17, 2]
+	mid: 2
+	L: [10, 20]
+	R: [30, 15]
+	mid: 1
+	L: [10]
+	R: [20]
+		iteration output: [10, 20]
+	mid: 1
+	L: [30]
+	R: [15]
+		iteration output: [15, 30]
+		iteration output: [10, 15, 20, 30]
+	mid: 2
+	L: [25, 5]
+	R: [17, 2]
+	mid: 1
+	L: [25]
+	R: [5]
+		iteration output: [5, 25]
+	mid: 1
+	L: [17]
+	R: [2]
+		iteration output: [2, 17]
+		iteration output: [2, 5, 17, 25]
+		iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
+	
+	Sorted Array:: 
+	[2, 5, 10, 15, 17, 20, 25, 30]
+	```
+
+8. 	**Heap Sort**
+	-	Time Complexity - O(n Log n)
+	
+	```
+	Input Array:: 
+	[10, 20, 30, 15, 25, 5, 17, 2]
+	
+	largest : 8
+	l : 17
+	r : 18
+	largest : 7
+	l : 15
+	r : 16
+	largest : 6
+	l : 13
+	r : 14
+	largest : 5
+	l : 11
+	r : 12
+	largest : 4
+	l : 9
+	r : 10
+	largest : 3
+	l : 7
+	r : 8
+	largest : 2
+	l : 5
+	r : 6
+	largest : 1
+	l : 3
+	r : 4
+	iteration output : [10, 25, 30, 15, 20, 5, 17, 2]
+	largest : 4
+	l : 9
+	r : 10
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [30, 25, 10, 15, 20, 5, 17, 2]
+	largest : 2
+	l : 5
+	r : 6
+	iteration output : [30, 25, 17, 15, 20, 5, 10, 2]
+	largest : 6
+	l : 13
+	r : 14
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [25, 2, 17, 15, 20, 5, 10, 30]
+	largest : 1
+	l : 3
+	r : 4
+	iteration output : [25, 20, 17, 15, 2, 5, 10, 30]
+	largest : 4
+	l : 9
+	r : 10
+	iteration output : [25, 20, 17, 15, 2, 5, 10, 30]
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [20, 10, 17, 15, 2, 5, 25, 30]
+	largest : 1
+	l : 3
+	r : 4
+	iteration output : [20, 15, 17, 10, 2, 5, 25, 30]
+	largest : 3
+	l : 7
+	r : 8
+	iteration output : [20, 15, 17, 10, 2, 5, 25, 30]
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [17, 15, 5, 10, 2, 20, 25, 30]
+	largest : 2
+	l : 5
+	r : 6
+	iteration output : [17, 15, 5, 10, 2, 20, 25, 30]
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [15, 2, 5, 10, 17, 20, 25, 30]
+	largest : 1
+	l : 3
+	r : 4
+	iteration output : [15, 10, 5, 2, 17, 20, 25, 30]
+	largest : 3
+	l : 7
+	r : 8
+	iteration output : [15, 10, 5, 2, 17, 20, 25, 30]
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [10, 2, 5, 15, 17, 20, 25, 30]
+	largest : 1
+	l : 3
+	r : 4
+	iteration output : [10, 2, 5, 15, 17, 20, 25, 30]
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [5, 2, 10, 15, 17, 20, 25, 30]
+	largest : 0
+	l : 1
+	r : 2
+	iteration output : [2, 5, 10, 15, 17, 20, 25, 30]
+	
+	Sorted Array:: 
+	[2, 5, 10, 15, 17, 20, 25, 30]
+	```
+
 	
 ## Data Structure
 
@@ -241,188 +393,3 @@
     - 	Exit
 	
 
-## **Sorting Algorithms**
-
-
-
-
-
-
-
-4. 	**Quick Sort - quick_sort.py**
-	- Sample Output
-```
-Input Array:: 
-[10, 20, 30, 15, 25, 5, 7, 2]
- 
-    swap_outside 10 and 2
-    array: [2, 20, 30, 15, 25, 5, 7, 10]
-    swap_inside 20 and 5
-    array: [2, 5, 30, 15, 25, 20, 7, 10]
-    swap_inside 30 and 7
-    array: [2, 5, 7, 15, 25, 20, 30, 10]
-    swap_outside 15 and 10
-    array: [2, 5, 7, 10, 25, 20, 30, 15]
-    swap_inside 5 and 5
-    array: [2, 5, 7, 10, 25, 20, 30, 15]
-    swap_outside 7 and 7
-    array: [2, 5, 7, 10, 25, 20, 30, 15]
-    swap_outside 25 and 15
-    array: [2, 5, 7, 10, 15, 20, 30, 25]
-    swap_inside 20 and 20
-    array: [2, 5, 7, 10, 15, 20, 30, 25]
-    swap_outside 30 and 25
-    array: [2, 5, 7, 10, 15, 20, 25, 30]
- 
-Sorted Array:: 
-[2, 5, 7, 10, 15, 20, 25, 30]
-```
-
-5. 	**Merge Sort - merge_sort.py**
-	- Sample Output
-```
-Input Array:: 
-[10, 20, 30, 15, 25, 5, 17, 2]
- 
-mid: 4
-L: [10, 20, 30, 15]
-R: [25, 5, 17, 2]
-mid: 2
-L: [10, 20]
-R: [30, 15]
-mid: 1
-L: [10]
-R: [20]
-    iteration output: [10, 20]
-mid: 1
-L: [30]
-R: [15]
-    iteration output: [15, 30]
-    iteration output: [10, 15, 20, 30]
-mid: 2
-L: [25, 5]
-R: [17, 2]
-mid: 1
-L: [25]
-R: [5]
-    iteration output: [5, 25]
-mid: 1
-L: [17]
-R: [2]
-    iteration output: [2, 17]
-    iteration output: [2, 5, 17, 25]
-    iteration output: [2, 5, 10, 15, 17, 20, 25, 30]
- 
-Sorted Array:: 
-[2, 5, 10, 15, 17, 20, 25, 30]
-```
-
-6. 	**Heap Sort - heap_sort.py**
-	- Sample Output
-```
-Input Array:: 
-[10, 20, 30, 15, 25, 5, 17, 2]
- 
-largest : 8
-l : 17
-r : 18
-largest : 7
-l : 15
-r : 16
-largest : 6
-l : 13
-r : 14
-largest : 5
-l : 11
-r : 12
-largest : 4
-l : 9
-r : 10
-largest : 3
-l : 7
-r : 8
-largest : 2
-l : 5
-r : 6
-largest : 1
-l : 3
-r : 4
-iteration output : [10, 25, 30, 15, 20, 5, 17, 2]
-largest : 4
-l : 9
-r : 10
-largest : 0
-l : 1
-r : 2
-iteration output : [30, 25, 10, 15, 20, 5, 17, 2]
-largest : 2
-l : 5
-r : 6
-iteration output : [30, 25, 17, 15, 20, 5, 10, 2]
-largest : 6
-l : 13
-r : 14
-largest : 0
-l : 1
-r : 2
-iteration output : [25, 2, 17, 15, 20, 5, 10, 30]
-largest : 1
-l : 3
-r : 4
-iteration output : [25, 20, 17, 15, 2, 5, 10, 30]
-largest : 4
-l : 9
-r : 10
-iteration output : [25, 20, 17, 15, 2, 5, 10, 30]
-largest : 0
-l : 1
-r : 2
-iteration output : [20, 10, 17, 15, 2, 5, 25, 30]
-largest : 1
-l : 3
-r : 4
-iteration output : [20, 15, 17, 10, 2, 5, 25, 30]
-largest : 3
-l : 7
-r : 8
-iteration output : [20, 15, 17, 10, 2, 5, 25, 30]
-largest : 0
-l : 1
-r : 2
-iteration output : [17, 15, 5, 10, 2, 20, 25, 30]
-largest : 2
-l : 5
-r : 6
-iteration output : [17, 15, 5, 10, 2, 20, 25, 30]
-largest : 0
-l : 1
-r : 2
-iteration output : [15, 2, 5, 10, 17, 20, 25, 30]
-largest : 1
-l : 3
-r : 4
-iteration output : [15, 10, 5, 2, 17, 20, 25, 30]
-largest : 3
-l : 7
-r : 8
-iteration output : [15, 10, 5, 2, 17, 20, 25, 30]
-largest : 0
-l : 1
-r : 2
-iteration output : [10, 2, 5, 15, 17, 20, 25, 30]
-largest : 1
-l : 3
-r : 4
-iteration output : [10, 2, 5, 15, 17, 20, 25, 30]
-largest : 0
-l : 1
-r : 2
-iteration output : [5, 2, 10, 15, 17, 20, 25, 30]
-largest : 0
-l : 1
-r : 2
-iteration output : [2, 5, 10, 15, 17, 20, 25, 30]
- 
-Sorted Array:: 
-[2, 5, 10, 15, 17, 20, 25, 30]
-```
